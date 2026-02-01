@@ -20,25 +20,109 @@
     <link rel="icon" type="image/png" href="assets/logo.png" />
 
     <link rel="stylesheet" href="style.css" />
-    <title>Dra Stefane Brito | Advogata</title>
+    <title>Dra. Stefane Brito | Advogada</title>
   </head>
   <body>
+    <!-- Header -->
     <header class="header">
       <div class="header__container">
         <a href="#home" class="header__logo" aria-label="Página Inicial"
-          ><span class="header__logo--color">Dra.</span> Stefane Brito</a
+          ><span class="header__logo-color">Dra.</span> Stefane Brito</a
         >
         <nav class="navbar" aria-label="Navegação Principal">
           <ul class="navbar__list">
-            <li><a href="#home">Início</a></li>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#services">Serviços</a></li>
-            <li><a href="#contat">Contato</a></li>
+            <li><a href="#home" class="navbar__link">Início</a></li>
+
+            <li><a href="#about" class="navbar__link">Sobre</a></li>
+            <li><a href="#services" class="navbar__link">Serviços</a></li>
+            <li><a href="#contact" class="navbar__link">Contato</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <footer></footer>
+
+    <!-- Main -->
+    <main>
+      <!-- Hero Section -->
+      <section class="hero" id="home">
+        <div class="header__container">
+          <div class="hero__content">
+            <p class="hero__subtitle">Advocacia & Consultoria</p>
+            <h1 class="hero__title">Soluções Jurídicas com Excelência</h1>
+            <p class="hero__description">
+              Atendimento personalizado e humanizado para proteger seus direitos
+              e interesses. Experiência, ética e comprometimento em cada caso.
+            </p>
+            <div class="hero__contacts">
+              <a href="#contact" class="btn btn--primary"
+                >Agende uma Consulta</a
+              >
+              <a href="#about" class="btn btn--secondary">Conheça Mais</a>
+            </div>
+          </div>
+
+          <div class="hero__image">
+            <img
+              src="./image-hero.png"
+              alt="imagem aleatoria de uma advogada segurando uma estatua "
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__section">
+          <h3 class="footer__section-title">Dra. Stefane Brito</h3>
+          <p class="footer__text">
+            Advocacia comprometida com a justiça e os direitos dos nossos
+            clientes. Atendimento humanizado e soluções personalizadas.
+          </p>
+        </div>
+
+        <div class="footer__section">
+          <h3 class="footer__section-title">Links Rápidos</h3>
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a href="#home" class="footer__link">Início</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#about" class="footer__link">Sobre</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#services" class="footer__link">Serviços</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#contact" class="footer__link">Contato</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__section">
+          <h3 class="footer__section-title">Contato</h3>
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a href="tel:+5581999999999" class="footer__link"
+                >(81) 99999-9999</a
+              >
+            </li>
+            <li class="footer__list-item">
+              <a href="mailto:email-aqui" class="footer__link"> email </a>
+            </li>
+            <li class="footer__list-item">
+              <span class="footer__text">localidade</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>
+          &copy; 2026 Dra. Stefane Brito. Todos os direitos reservados. OAB/MA
+          -11111
+        </p>
+      </div>
+    </footer>
 
     <!-- acesibilidade de libras do governo -->
     <div vw class="enabled">
