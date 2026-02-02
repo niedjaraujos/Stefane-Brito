@@ -16,9 +16,13 @@ Site institucional responsivo desenvolvido para uma profissional da área juríd
 - [x] Formulário de contato funcional
 - [x] Botão flutuante para WhatsApp
 - [x] Animações suaves na rolagem (Scroll Reveal)
+- [x] Acessibilidade com VLibras
 
 ## 📸 Preview
 
+<img width="1671" height="872" alt="image" src="https://github.com/user-attachments/assets/8d9ea722-b943-4065-890e-b615ae443b9a" />
+
+
 ## 🔗 Link do Projeto
-[Clique aqui para visitar]()
+[Clique aqui para visitar](https://stefane-brito.vercel.app/)
 
