@@ -85,7 +85,7 @@
 .hero__content {
   max-width: 500px;
 }
-.hero__subtitle {
+.subtitle {
   color: var(--color-text-light);
   text-transform: uppercase;
   font-weight: 500;

@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Meta tags de SEO -->
     <meta
       name="description"
       content="Advocacia especializada em direito civil, família e trabalhista. Atendimento humanizado e soluções jurídicas personalizadas."
@@ -11,14 +12,22 @@
       name="keywords"
       content="advogada, advocacia, direito civil, direito de família, direito trabalhista"
     />
+    <!-- Link para Icons -->
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+
+    <!-- Link para fontes do google -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/logo.png" />
-
+    <!-- Link do arquivo css -->
     <link rel="stylesheet" href="style.css" />
     <title>Dra. Stefane Brito | Advogada</title>
   </head>
@@ -35,9 +44,8 @@
         <nav class="navbar" aria-label="Navegação Principal">
           <ul class="navbar__list">
             <li><a href="#home" class="navbar__link">Início</a></li>
-
-            <li><a href="#about" class="navbar__link">Sobre</a></li>
             <li><a href="#services" class="navbar__link">Serviços</a></li>
+            <li><a href="#about" class="navbar__link">Sobre</a></li>
             <li><a href="#contact" class="navbar__link">Contato</a></li>
           </ul>
         </nav>
@@ -50,7 +58,7 @@
       <section class="hero" id="home">
         <div class="container hero__container">
           <div class="hero__content">
-            <p class="hero__subtitle">Advocacia & Consultoria</p>
+            <p class="subtitle">Advocacia & Consultoria</p>
             <h1>Soluções Jurídicas com Excelência</h1>
             <p class="hero__description">
               Atendimento personalizado e humanizado para proteger seus direitos
@@ -72,6 +80,82 @@
             />
           </div>
         </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services">
+        <div class="container services__container">
+          <div class="services__header">
+            <p class="subtitle">Áreas de Atuação</p>
+            <h2>Serviços Especializados</h2>
+            <p>
+              Oferecemos assessoria jurídica completa com foco em resultados e
+              satisfação do cliente
+            </p>
+          </div>
+
+          <div class="cards">
+            <artcile class="card">
+              <i class="las la-briefcase"></i>
+              <h3>Direito Trabalhista</h3>
+              <p>
+                Defesa dos direitos do trabalhador, rescisões, verbas
+                trabalhistas e ações judiciais. Experiência em negociações e
+                acordos.
+              </p>
+            </artcile>
+            <artcile class="card"
+              ><i class="las la-hand-holding-usd"></i>
+              <h3>Direito Previdenciário</h3>
+              <p>
+                Atuação administrativa, planejamentos processos judiciais na
+                concessão de aposentadorias por idade, tempo, invalidez,
+                auxílios ou pensões.
+              </p></artcile
+            >
+            <artcile class="card">
+              <i class="las la-balance-scale"></i>
+              <h3>Direito Civil</h3>
+              <p>
+                Contratos, responsabilidade civil, indenizações e direito do
+                consumidor. Atuação na prevenção de conflitos, inclusive através
+                da mediação e conciliação.
+              </p>
+            </artcile>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about">
+        <div class="container">
+          <div class="about__image">
+            <img
+              src="./Stefane.png"
+              alt="A advogada Stefane em seu escritório"
+              loading="lazy"
+            />
+          </div>
+          <div class="about__content">
+            <p class="subtitle">Quem Sou</p>
+            <h2>Dra. Stefane Brito</h2>
+            <p class="about__text">Texto Experiências</p>
+            <p class="about__text">texto estudos/pessoal</p>
+            <ul class="about__list">
+              <li class="about__list-item">OAB/AP ...</li>
+              <li class="about__list-item">Especialização em ...</li>
+              <li class="about__list-item">Membro comissão OAB Jovem.</li>
+              <li class="about__list-item">
+                Pós graduanda em prática previdenciária e trabalhista.
+              </li>
+            </ul>
+            <a href="#contact" class="btn btn--primary">Entre em Contato</a>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div><p class="subtitle">Fale Conosco</p></div>
       </section>
     </main>
 
