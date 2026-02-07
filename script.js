@@ -6,6 +6,7 @@ const navLinks = document.querySelectorAll('.navbar__link');
 
 menu.addEventListener('click', () => {
   navList.classList.toggle('active');
+  menu.classList.toggle("active");
 });
 
 navLinks.forEach((link) => {
