@@ -32,6 +32,7 @@ body {
   background-color: var(--color-bg);
   color: var(--color-text);
   line-height: 1.7;
+  overflow-x: hidden;
 }
 
 h1,
@@ -43,9 +44,11 @@ h4 {
   line-height: 1.2;
 }
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
+  width: 100%;
+  max-width: 1536px;
+  margin-inline: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 1rem;
 }

@@ -1,16 +1,12 @@
 .header {
   background: var(--color-primary);
-  position: fixed;
+  position: sticky;
   top: 0;
-  left: 0;
-  right: 0;
-  z-index: 50;
+  z-index: 1000;
 }
-.header__container {
-  padding: 0.5rem 1.5rem;
-}
+
 .header__logo {
-  font-family: var(--font-style);
+  font-family: var(--font-heading);
   font-size: 1.75rem;
   font-weight: 700;
   color: var(--color-white);
@@ -22,7 +18,7 @@
 .navbar {
   position: absolute;
   z-index: 99;
-  background-color: #060916d8;
+  background-color: #060916e8;
   width: 30vw;
   top: 50px;
   right: 0;
@@ -51,7 +47,7 @@
   position: relative;
 }
 .navbar__link::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -4px;
   left: 0;
@@ -75,17 +71,16 @@
     var(--color-bg) 0%,
     rgba(201, 170, 97, 0.192) 100%
   );
-  padding-top: 7rem;
 }
 .hero__container {
   display: flex;
   flex-direction: column-reverse;
   gap: 2rem;
-  padding: 1.5rem;
   animation: fadeInUp 1s ease-out;
 }
 .hero__content {
   max-width: 500px;
+  width: 100%;
 }
 .subtitle {
   color: var(--color-text-light);
