@@ -36,7 +36,9 @@
 .menu-hamburguer img {
   width: 30px;
 }
-
+.menu-hamburguer.active img {
+  content: url("../assets/close.png");
+}
 .navbar__list {
   display: flex;
   flex-direction: column;
