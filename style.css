@@ -26,9 +26,28 @@
   --border-radius-sm: 4px;
 }
 html {
+  scroll-padding-top: 6rem;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* scroll colorido */
+  scrollbar-color: #060916 #c0c0c0;
+  scrollbar-width: thin;
+}
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #8e44ad;
+  border-radius: 20px; /* Deixa arredondado */
+  border: 3px solid #f1f1f1; /* Cria um espaço entre o polegar e o trilho */
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #732d91;
 }
 body {
   min-height: 100vh;

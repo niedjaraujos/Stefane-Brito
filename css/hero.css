@@ -13,7 +13,6 @@
 }
 .hero__content {
   max-width: 600px;
-  padding: 1rem;
 }
 .subtitle {
   color: var(--color-text-light);
@@ -29,7 +28,7 @@ h1 {
   line-height: 1.1;
 }
 .hero__description {
-  font-size: clamp(0.5rem, 5vw, 1.75rem);
+  font-size: clamp(0.5rem, 5vw, 1.5rem);
   color: var(--color-text-light);
   margin-bottom: 2.5rem;
 }
@@ -51,7 +50,7 @@ h1 {
   color: var(--color-primary);
 }
 .hero__image {
-  max-width: 550px;
+  max-width: 500px;
   width: 100%;
 }
 .hero__image img {

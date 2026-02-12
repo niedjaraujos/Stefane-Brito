@@ -48,6 +48,7 @@
   color: var(--color-white);
   font-weight: 400;
   position: relative;
+  font-size: clamp(1rem, 5vw, 1.25rem);
 }
 .navbar__link::after {
   content: "";
@@ -67,4 +68,18 @@
 .navbar__link:hover::after,
 .navbar__link:focus::after {
   width: 100%;
+}
+@media (width>= 1024px) {
+  .menu-hamburguer {
+    display: none;
+  }
+  .navbar {
+    display: block;
+    position: static;
+  }
+  .navbar__list {
+    flex-direction: row;
+    gap: 2rem;
+    margin: 0;
+  }
 }
