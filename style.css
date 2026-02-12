@@ -1,6 +1,6 @@
-@import url('./css/headerHero.css');
-@import url('./css/responsividade.css');
-@import url('./css/main.css');
+@import url("./css/headerHero.css");
+@import url("./css/responsividade.css");
+@import url("./css/main.css");
 
 * {
   margin: 0;
@@ -18,17 +18,17 @@
   --color-bg: #fefdfb;
   --color-white: #ffffff;
 
-  --font-style: 'Cormorant Garamond', serif;
-  --font-body: 'Inter', sans-serif;
+  --font-heading: "Cormorant Garamond", serif;
+  --font-base: "Inter", sans-serif;
 
-  --border-radius-pd: 4px;
+  --border-radius-sm: 4px;
 }
 html {
   scroll-behavior: smooth;
 }
 body {
   min-height: 100vh;
-  font-family: var(--font-body);
+  font-family: var(--font-base);
   background-color: var(--color-bg);
   color: var(--color-text);
   line-height: 1.7;
@@ -38,7 +38,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: var(--font-style);
+  font-family: var(--font-heading);
   font-weight: 600;
   line-height: 1.2;
 }
