@@ -1,8 +1,10 @@
-@import url("./css/headerHero.css");
-@import url("./css/responsividade.css");
+@import url("./css/header.css");
 @import url("./css/main.css");
+@import url("./css/hero.css");
 
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -25,6 +27,8 @@
 }
 html {
   scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 body {
   min-height: 100vh;
@@ -32,9 +36,10 @@ body {
   background-color: var(--color-bg);
   color: var(--color-text);
   line-height: 1.7;
-  overflow-x: hidden;
 }
-
+main {
+  flex: 1;
+}
 h1,
 h2,
 h3,
@@ -45,10 +50,26 @@ h4 {
 }
 .container {
   width: 100%;
-  max-width: 1536px;
+  max-width: 1400px;
   margin-inline: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
+}
+.btn {
+  padding: 1rem 2rem;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: var(--border-radius-sm);
+  transition: ease-in-out 0.3s;
+}
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(26, 35, 50, 0.2);
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
