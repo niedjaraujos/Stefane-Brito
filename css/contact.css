@@ -33,7 +33,7 @@ textarea {
 input:focus,
 textarea:focus {
   outline: none;
-  border-color: var(--color-secondary);
+  border-color: #c9aa61c0;
 }
 textarea {
   resize: none;
