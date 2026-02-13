@@ -6,7 +6,7 @@
   z-index: 1000;
 }
 .header__container {
-  max-width: 1400px;
+  max-width: var(--width-container);
   margin-inline: auto;
   display: flex;
   align-items: center;
@@ -83,6 +83,8 @@
   .navbar {
     display: block;
     position: static;
+    width: auto;
+    margin-left: auto;
   }
   .navbar__list {
     flex-direction: row;

@@ -1,0 +1,44 @@
+.contact {
+  background: var(--color-white);
+}
+.contact__header {
+  text-align: center;
+}
+form {
+  background-color: #c9aa6109;
+  padding: 4rem;
+  max-width: 800px;
+  width: 100%;
+}
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  margin-block: 1rem;
+}
+label {
+  font-weight: 500;
+  color: var(--color-text);
+}
+input,
+textarea {
+  width: 100%;
+  padding: 0.875rem;
+  border: 2px solid rgba(201, 169, 97, 0.2);
+  border-radius: 2px;
+  font-family: var(--font-base);
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  background: var(--color-white);
+}
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--color-secondary);
+}
+textarea {
+  resize: none;
+  min-height: 150px;
+}
+.contact__button {
+  width: 100%;
+}

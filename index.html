@@ -47,7 +47,6 @@
             <li><a href="#services" class="navbar__link">Serviços</a></li>
             <li><a href="#about" class="navbar__link">Sobre</a></li>
             <li><a href="#contact" class="navbar__link">Contato</a></li>
-            <li><a href="#contact" class="navbar__link">Contato</a></li>
           </ul>
         </nav>
       </div>
@@ -140,12 +139,23 @@
           <div class="about__content">
             <p class="subtitle">Quem Sou</p>
             <h2>Dra. Stefane Brito</h2>
-            <p class="about__text">Texto Experiências</p>
-            <p class="about__text">texto estudos/pessoal</p>
+            <p class="about__text">
+              Com mais de 15 anos de experiência, dedico-me a oferecer soluções
+              jurídicas estratégicas e personalizadas. Minha missão é garantir
+              que cada cliente receba a atenção e o suporte necessários para
+              alcançar os melhores resultados.
+            </p>
+            <p class="about__text">
+              Graduada pela Universidade Federal, com especializações em Direito
+              Civil e Direito de Família, busco constantemente aprimoramento
+              para oferecer um atendimento de excelência
+            </p>
             <ul class="about__list">
               <li class="about__list-item">OAB/AP - 5446</li>
-              <li class="about__list-item">Especialização em ...</li>
-              <li class="about__list-item">Membro comissão OAB Jovem.</li>
+              <li class="about__list-item">
+                Especialização em Direito Trabalhista e Previdenciário
+              </li>
+              <li class="about__list-item">Membro comissão OAB/AP Jovem.</li>
               <li class="about__list-item">
                 Pós graduanda em prática previdenciária e trabalhista.
               </li>
@@ -156,16 +166,71 @@
       </section>
 
       <!-- Seção Contato -->
-      <section id="contact">
+      <section id="contact" class="contact">
         <div class="container">
-          <p class="subtitle">Fale Conosco</p>
-          <h2>Agende sua Consulta</h2>
-          <p class="description">
-            Preencha o formulário abaixo e entraremos em contato o mais breve
-            possível
-          </p>
+          <div class="contact__header">
+            <p class="subtitle">Fale Conosco</p>
+            <h2>Agende sua Consulta</h2>
+            <p class="description">
+              Preencha o formulário abaixo e entraremos em contato o mais breve
+              possível
+            </p>
+          </div>
+          <form action="" aria-label="Formulário de contato">
+            <div class="formGroup">
+              <label for="name"
+                >Nome Completo
+                <span aria-label="campo obrigatório">*</span></label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                aria-required="true"
+              />
+            </div>
+            <div class="formGroup">
+              <label for="email"
+                >E-mail <span aria-label="campo obrigatório">*</span></label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                aria-required="true"
+              />
+            </div>
+
+            <div class="formGroup">
+              <label for="phone"
+                >Telefone <span aria-label="campo obrigatório">*</span></label
+              >
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                required
+                aria-required="true"
+              />
+            </div>
+            <div class="formGroup">
+              <label for="message"
+                >Mensagem <span aria-label="campo obrigatório">*</span></label
+              >
+              <textarea
+                name="message"
+                id="message"
+                required
+                aria-required="true"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary contact__button">
+              Enviar Mensagem
+            </button>
+          </form>
         </div>
-        <form action=""></form>
       </section>
     </main>
 
