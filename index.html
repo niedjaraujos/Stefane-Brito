@@ -32,9 +32,9 @@
     <title>Dra. Stefane Brito | Advogada</title>
   </head>
   <body>
-    <!-- Header -->
+    <!-- Cabeçalho -->
     <header class="header">
-      <div class="container">
+      <div class="header__container">
         <a href="#home" class="header__logo" aria-label="Página Inicial"
           ><span class="header__logo-color">Dra.</span> Stefane Brito</a
         >
@@ -53,15 +53,15 @@
       </div>
     </header>
 
-    <!-- Main -->
+    <!-- Principal -->
     <main>
-      <!-- Hero Section -->
+      <!-- Seção Hero-->
       <section class="hero" id="home">
         <div class="container hero__container">
           <div class="hero__content">
             <p class="subtitle">Advocacia & Consultoria</p>
             <h1>Soluções Jurídicas com Excelência</h1>
-            <p class="hero__description">
+            <p class="description">
               Atendimento personalizado e humanizado para proteger seus direitos
               e interesses. Experiência, ética e comprometimento em cada caso.
             </p>
@@ -73,7 +73,7 @@
             </div>
           </div>
 
-          <div class="hero__image">
+          <div class="image">
             <img
               src="./assets/image-hero.png"
               alt="imagem aleatoria de uma advogada segurando uma estatua"
@@ -83,13 +83,13 @@
         </div>
       </section>
 
-      <!-- Services Section -->
+      <!-- Seção Serviços-->
       <section id="services">
         <div class="container services__container">
           <div class="services__header">
             <p class="subtitle">Áreas de Atuação</p>
             <h2>Serviços Especializados</h2>
-            <p>
+            <p class="description">
               Oferecemos assessoria jurídica completa com foco em resultados e
               satisfação do cliente
             </p>
@@ -99,7 +99,7 @@
             <artcile class="card">
               <i class="las la-briefcase"></i>
               <h3>Direito Trabalhista</h3>
-              <p>
+              <p class="card_description">
                 Defesa dos direitos do trabalhador, rescisões, verbas
                 trabalhistas e ações judiciais. Experiência em negociações e
                 acordos.
@@ -108,7 +108,7 @@
             <artcile class="card"
               ><i class="las la-hand-holding-usd"></i>
               <h3>Direito Previdenciário</h3>
-              <p>
+              <p class="card_description">
                 Atuação administrativa, planejamentos processos judiciais na
                 concessão de aposentadorias por idade, tempo, invalidez,
                 auxílios ou pensões.
@@ -117,7 +117,7 @@
             <artcile class="card">
               <i class="las la-balance-scale"></i>
               <h3>Direito Civil</h3>
-              <p>
+              <p class="card_description">
                 Contratos, responsabilidade civil, indenizações e direito do
                 consumidor. Atuação na prevenção de conflitos, inclusive através
                 da mediação e conciliação.
@@ -127,10 +127,10 @@
         </div>
       </section>
 
-      <!-- About Section -->
-      <section id="about">
+      <!-- Seção Sobre-->
+      <section id="about" class="about">
         <div class="container">
-          <div class="about__image">
+          <div class="image">
             <img
               src="./assets/Stefane.png"
               alt="A advogada Stefane em seu escritório"
@@ -143,20 +143,29 @@
             <p class="about__text">Texto Experiências</p>
             <p class="about__text">texto estudos/pessoal</p>
             <ul class="about__list">
-              <li class="about__list-item">OAB/AP ...</li>
+              <li class="about__list-item">OAB/AP - 5446</li>
               <li class="about__list-item">Especialização em ...</li>
               <li class="about__list-item">Membro comissão OAB Jovem.</li>
               <li class="about__list-item">
                 Pós graduanda em prática previdenciária e trabalhista.
               </li>
             </ul>
-            <a href="#contact" class="btn btn--primary">Entre em Contato</a>
+            <a href="/" class="btn btn--primary">Entre em Contato</a>
           </div>
         </div>
       </section>
 
-      <section>
-        <div><p class="subtitle">Fale Conosco</p></div>
+      <!-- Seção Contato -->
+      <section id="contact">
+        <div class="container">
+          <p class="subtitle">Fale Conosco</p>
+          <h2>Agende sua Consulta</h2>
+          <p class="description">
+            Preencha o formulário abaixo e entraremos em contato o mais breve
+            possível
+          </p>
+        </div>
+        <form action=""></form>
       </section>
     </main>
 
@@ -191,15 +200,17 @@
           <h3 class="footer__section-title">Contato</h3>
           <ul class="footer__list">
             <li class="footer__list-item">
-              <a href="tel:+5581999999999" class="footer__link"
-                >(81) 99999-9999</a
+              <a href="tel:+5596981346275" class="footer__link"
+                >(96) 98134-6275</a
               >
             </li>
             <li class="footer__list-item">
-              <a href="mailto:email-aqui" class="footer__link"> email </a>
+              <a href="mailto:stefanebrt.adv@gmail.com" class="footer__link">
+                stefanebrt.adv@gmail.com
+              </a>
             </li>
             <li class="footer__list-item">
-              <span class="footer__text">localidade</span>
+              <span class="footer__text">Macapá - AP</span>
             </li>
           </ul>
         </div>
@@ -207,8 +218,8 @@
 
       <div class="footer__bottom">
         <p>
-          &copy; 2026 Dra. Stefane Brito. Todos os direitos reservados. OAB/MA
-          -11111
+          &copy; 2026 Dra. Stefane Brito. Todos os direitos reservados. OAB/AP
+          -5446
         </p>
       </div>
     </footer>

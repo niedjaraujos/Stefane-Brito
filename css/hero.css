@@ -1,36 +1,20 @@
 .hero {
-  background: linear-gradient(
-    to right,
-    var(--color-bg) 0%,
-    rgba(201, 170, 97, 0.192) 100%
-  );
-  padding: 1rem;
+  background: linear-gradient(to right, var(--color-bg) 0%, #c9aa6131 100%);
 }
 .hero__container {
-  flex-direction: column-reverse;
-  gap: 2rem;
+  flex-direction: column-reverse !important;
+  gap: 3rem;
   animation: fadeInUp 1s ease-out;
 }
 .hero__content {
   max-width: 600px;
 }
-.subtitle {
-  color: var(--color-text-light);
-  text-transform: uppercase;
-  font-weight: 500;
-  letter-spacing: 2px;
-  margin-bottom: 1.5rem;
-}
+
 h1 {
-  font-size: clamp(2rem, 10vw, 5rem);
+  font-size: clamp(3rem, 10vw, 5rem);
   color: var(--color-primary);
   margin-bottom: 2rem;
   line-height: 1.1;
-}
-.hero__description {
-  font-size: clamp(0.5rem, 5vw, 1.5rem);
-  color: var(--color-text-light);
-  margin-bottom: 2.5rem;
 }
 
 .hero__contacts {
@@ -38,6 +22,7 @@ h1 {
   text-align: center;
   flex-direction: column;
   gap: 1.2rem;
+  margin-top: 2rem;
 }
 
 .btn--primary {
@@ -49,13 +34,7 @@ h1 {
   border: 2px solid var(--color-primary);
   color: var(--color-primary);
 }
-.hero__image {
-  max-width: 500px;
-  width: 100%;
-}
-.hero__image img {
-  border-radius: var(--border-radius-sm);
-}
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -67,11 +46,8 @@ h1 {
   }
 }
 @media (width >= 1024px) {
-  .hero {
-    padding-block: 3rem;
-  }
   .hero__container {
-    flex-direction: row;
+    flex-direction: row !important;
     width: 100%;
   }
 }

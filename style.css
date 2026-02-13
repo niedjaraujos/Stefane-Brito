@@ -1,6 +1,9 @@
 @import url("./css/header.css");
-@import url("./css/main.css");
 @import url("./css/hero.css");
+@import url("./css/services.css");
+@import url("./css/about.css");
+@import url("./css/contact.css");
+@import url("./css/footer.css");
 
 *,
 *::before,
@@ -13,8 +16,8 @@
 }
 :root {
   --color-primary: #060916;
-  --color-secondary: #c0c0c0;
-  --color-span: #2d4059;
+  --color-secondary: #c9aa6120;
+  --color-span: #c0c0c0;
   --color-text: #2c2c2c;
   --color-text-light: #5a5a5a;
   --color-bg: #fefdfb;
@@ -59,6 +62,9 @@ body {
 main {
   flex: 1;
 }
+section {
+  padding: 2rem 1rem;
+}
 h1,
 h2,
 h3,
@@ -67,14 +73,38 @@ h4 {
   font-weight: 600;
   line-height: 1.2;
 }
+h2 {
+  font-size: clamp(1rem, 10vw, 3rem);
+  color: var(--color-primary);
+  margin-bottom: 1.5rem;
+}
+.subtitle {
+  font-size: 1rem;
+  color: var(--color-text-light);
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+.description {
+  font-size: 1.25rem;
+  color: var(--color-text-light);
+  margin-bottom: 2.5rem;
+}
 .container {
   width: 100%;
-  max-width: 1400px;
+  max-width: 1280px;
   margin-inline: auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
+}
+@media (width>= 1024px) {
+  .container {
+    padding-block: 3rem;
+  }
 }
 .btn {
   padding: 1rem 2rem;
@@ -87,8 +117,14 @@ h4 {
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(26, 35, 50, 0.2);
 }
+
+.image {
+  max-width: 500px;
+  width: 100%;
+}
 img {
   width: 100%;
   height: auto;
   display: block;
+  border-radius: var(--border-radius-sm);
 }

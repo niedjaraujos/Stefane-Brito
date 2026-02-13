@@ -5,23 +5,30 @@
   top: 0;
   z-index: 1000;
 }
-
+.header__container {
+  max-width: 1400px;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem;
+}
 .header__logo {
   font-family: var(--font-heading);
-  font-size: 2rem;
+  font-size: clamp(1rem, 10vw, 2rem);
   font-weight: 700;
   color: var(--color-white);
   letter-spacing: 0.5px;
 }
 .header__logo-color {
-  color: var(--color-secondary);
+  color: var(--color-span);
 }
 .navbar {
   position: absolute;
   z-index: 99;
   background-color: #060916e8;
   border-radius: var(--border-radius-sm);
-  width: 30vw;
+  width: 40vw;
   top: 5rem;
   right: 0;
   text-align: center;
@@ -33,7 +40,7 @@
 }
 .menu-hamburguer img {
   width: 30px;
-  margin-right: 1rem;
+  margin-right: 1.5rem;
 }
 .menu-hamburguer.active img {
   content: url("../assets/close.png");

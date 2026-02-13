@@ -1,0 +1,36 @@
+.services__container {
+  text-align: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.card {
+  padding: 2rem;
+  border-radius: var(--border-radius-sm);
+  border: 1px solid #c9aa6111;
+  text-align: left;
+  background-color: #c9aa6109;
+  transition: all var(--transition-base);
+}
+.card i {
+  font-size: 3rem;
+  color: rgb(245, 172, 1);
+}
+h3 {
+  color: var(--color-primary);
+  font-size: 1.5rem;
+  margin-block: 1rem;
+}
+.card_description {
+  color: var(--color-text-light);
+  line-height: 1.7;
+}
+@media (width >= 1024px) {
+  .services__header {
+    width: 600px;
+  }
+}

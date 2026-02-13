@@ -1,0 +1,14 @@
+.about {
+  background: var(--color-secondary);
+}
+.about__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+@media (width>= 1024px) {
+  .about .container {
+    width: 1250px;
+    flex-direction: row;
+  }
+}
