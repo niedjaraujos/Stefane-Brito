@@ -64,12 +64,12 @@
   left: 0;
   width: 0;
   height: 2px;
-  background: var(--color-secondary);
+  background: var(--color-span);
   transition: width 0.3s;
 }
 .navbar__link:hover,
 .navbar__link:focus {
-  color: var(--color-secondary);
+  color: var(--color-span);
 }
 
 .navbar__link:hover::after,
