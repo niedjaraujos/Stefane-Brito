@@ -9,9 +9,5 @@ menu.addEventListener('click', () => {
   menu.classList.toggle("active");
 });
 
-navLinks.forEach((link) => {
-  link.addEventListener('click', () => {
-    navList.classList.remove('active');
-  });
-});
+
 // intersection observer para animações de scroll
