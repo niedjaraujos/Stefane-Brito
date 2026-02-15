@@ -65,11 +65,15 @@ main {
   flex: 1;
 }
 section {
-  padding: 4rem 1rem;
+  padding: 1rem;
+}
+@media (width >= 1024px) {
+  section {
+    padding: 4rem 1rem;
+  }
 }
 h2,
-h3,
-h4 {
+h3 {
   font-family: var(--font-heading);
   font-weight: 600;
   line-height: 1.2;

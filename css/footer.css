@@ -9,7 +9,7 @@
 section {
   padding: 0;
 }
-h4 {
+.footer__section-title {
   color: var(--color-span);
   font-size: 1.5rem;
   margin-bottom: 1rem;

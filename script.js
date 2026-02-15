@@ -7,6 +7,13 @@ const navLinks = document.querySelectorAll(".navbar__link");
 menu.addEventListener("click", () => {
   navList.classList.toggle("active");
   menu.classList.toggle("active");
+
+  //ação do leitor de tela ao clicar no menu hamburguer,
+  // Verifica se está aberto ou fechado
+  const isExpanded = navList.classList.contains("active");
+
+  // Atualiza aria-expanded dinamicamente
+  menu.setAttribute("aria-expanded", isExpanded);
 });
 
 // Intersection Observer para animações ao scroll

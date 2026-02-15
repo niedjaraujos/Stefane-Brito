@@ -89,27 +89,49 @@
         <a href="#home" class="header__logo" aria-label="Página Inicial"
           ><span class="header__logo-color">Dra.</span> Stefane Brito</a
         >
-        <div class="menu-hamburguer" aria-label="Abrir menu">
-          <img src="./assets/hamburguer.svg" alt="menu hamburguer" />
+        <div
+          class="menu-hamburguer"
+          aria-label="Abrir menu de navegação"
+          aria-expanded="false"
+          aria-controls="navbar"
+        >
+          <img
+            src="./assets/hamburguer.svg"
+            alt="menu hamburguer"
+            aria-hidden="true"
+          />
         </div>
-        <nav class="navbar" aria-label="Navegação Principal">
-          <ul class="navbar__list">
-            <li><a href="#home" class="navbar__link">Início</a></li>
-            <li><a href="#services" class="navbar__link">Serviços</a></li>
-            <li><a href="#about" class="navbar__link">Sobre</a></li>
-            <li><a href="#contact" class="navbar__link">Contato</a></li>
+        <nav
+          class="navbar"
+          aria-label="Navegação Principal"
+          role="navigation"
+          id="navbar"
+        >
+          <ul class="navbar__list" role="list">
+            <li>
+              <a href="#home" class="navbar__link">Início</a>
+            </li>
+            <li>
+              <a href="#services" class="navbar__link">Serviços</a>
+            </li>
+            <li>
+              <a href="#about" class="navbar__link">Sobre</a>
+            </li>
+            <li>
+              <a href="#contact" class="navbar__link">Contato</a>
+            </li>
           </ul>
         </nav>
       </div>
     </header>
 
     <!-- Principal -->
-    <main>
+    <main role="main" id="main-content">
       <!-- Seção Hero-->
       <section class="hero" id="home">
         <div class="container hero__container">
           <div class="hero__content">
-            <h1 class="subtitle">
+            <h1 class="subtitle" id="hero-title">
               Advogada Trabalhista e Previdenciária em Macapá
             </h1>
             <h2 class="hero__title">Soluções Jurídicas com Excelência</h2>
@@ -150,9 +172,9 @@
             </p>
           </div>
 
-          <div class="cards">
-            <article class="card">
-              <i class="las la-briefcase"></i>
+          <div class="cards" role="list">
+            <article class="card" role="listitem">
+              <i class="las la-briefcase" aria-hidden="true"></i>
               <h3>Direito Trabalhista</h3>
               <p class="card_description">
                 Defesa dos direitos do trabalhador, rescisões, verbas
@@ -160,8 +182,8 @@
                 acordos.
               </p>
             </article>
-            <article class="card">
-              <i class="las la-hand-holding-usd"></i>
+            <article class="card" role="listitem">
+              <i class="las la-hand-holding-usd" aria-hidden="true"></i>
               <h3>Direito Previdenciário</h3>
               <p class="card_description">
                 Atuação administrativa, planejamentos processos judiciais na
@@ -169,8 +191,8 @@
                 auxílios ou pensões.
               </p>
             </article>
-            <article class="card">
-              <i class="las la-balance-scale"></i>
+            <article class="card" role="listitem">
+              <i class="las la-balance-scale" aria-hidden="true"></i>
               <h3>Direito Civil</h3>
               <p class="card_description">
                 Contratos, responsabilidade civil, indenizações e direito do
@@ -211,7 +233,7 @@
               abordagem humanizada, oferecendo soluções jurídicas sólidas e
               sensíveis à realidade de cada cliente."
             </p>
-            <ul class="about__list">
+            <ul class="about__list" role="list">
               <li class="about__list-item">OAB/AP - 5446</li>
               <li class="about__list-item">Atua em Macapá e região - AP</li>
               <li class="about__list-item">Membro comissão OAB/AP Jovem.</li>
@@ -235,7 +257,7 @@
               possível
             </p>
           </div>
-          <form action="" aria-label="Formulário de contato">
+          <form aria-label="Formulário de contato" novalidate>
             <div class="formGroup">
               <label for="name"
                 >Nome Completo
@@ -245,9 +267,12 @@
                 type="text"
                 id="name"
                 name="name"
+                autocomplete="name"
                 required
                 aria-required="true"
+                aria-describedby="name-error"
               />
+              <span id="name-error" class="error-message" role="alert"></span>
             </div>
             <div class="formGroup">
               <label for="email"
@@ -257,9 +282,12 @@
                 type="email"
                 id="email"
                 name="email"
+                autocomplete="email"
                 required
                 aria-required="true"
+                aria-describedby="email-error"
               />
+              <span id="email-error" class="error-message" role="alert"></span>
             </div>
 
             <div class="formGroup">
@@ -270,9 +298,13 @@
                 type="tel"
                 id="phone"
                 name="phone"
+                autocomplete="tel"
                 required
                 aria-required="true"
+                aria-describedby="phone-error"
+                placeholder="(00) 00000-0000"
               />
+              <span id="phone-error" class="error-message" role="alert"></span>
             </div>
             <div class="formGroup">
               <label for="message"
@@ -283,7 +315,14 @@
                 id="message"
                 required
                 aria-required="true"
+                aria-describedby="message-error"
+                rows="5"
               ></textarea>
+              <span
+                id="message-error"
+                class="error-message"
+                role="alert"
+              ></span>
             </div>
             <button type="submit" class="btn btn--primary contact__button">
               Enviar Mensagem
@@ -293,11 +332,11 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
       <div class="footer__container">
         <div class="footer__top">
           <section class="footer__section">
-            <h4 class="footer__section-title">Dra. Stefane Brito</h4>
+            <h3 class="footer__section-title">Dra. Stefane Brito</h3>
             <p class="footer__text text">
               Advogada trabalhista e previdenciária em Macapá-AP, comprometida
               com a justiça e os direitos dos nossos clientes. Atendimento
@@ -305,9 +344,9 @@
             </p>
           </section>
 
-          <section class="footer__section">
-            <h4 class="footer__section-title">Links Rápidos</h4>
-            <ul class="footer__list">
+          <section class="footer__section" aria-labelledby="footer-links">
+            <h3 class="footer__section-title">Links Rápidos</h3>
+            <ul class="footer__list" role="list">
               <li class="footer__list-item">
                 <a href="#home" class="footer__link">Início</a>
               </li>
@@ -323,20 +362,25 @@
             </ul>
           </section>
           <section class="footer__section">
-            <h4 class="footer__section-title">Contato</h4>
-            <ul class="footer__list">
+            <h3 class="footer__section-title">Contato</h3>
+            <ul class="footer__list" role="list">
               <li class="footer__list-item">
-                <a href="tel:+5596981346275" class="footer__link"
-                  >(96) 98134-6275</a
+                <a href="tel:+5596981346275" class="footer__link">
+                  <i class="las la-phone" aria-hidden="true"></i>(96)
+                  98134-6275</a
                 >
               </li>
               <li class="footer__list-item">
                 <a href="mailto:stefanebrt.adv@gmail.com" class="footer__link">
+                  <i class="las la-envelope" aria-hidden="true"></i>
                   stefanebrt.adv@gmail.com
                 </a>
               </li>
               <li class="footer__list-item">
-                <span class="footer__link">Macapá - AP</span>
+                <span class="footer__link">
+                  <i class="las la-map-marker" aria-hidden="true"></i>Macapá -
+                  AP</span
+                >
               </li>
             </ul>
           </section>
@@ -350,13 +394,15 @@
       </div>
     </footer>
 
+    <!-- Botão flutuante WhatsApp -->
     <a
       href="https://wa.me/5596981346275?text=Olá, gostaria de agendar uma consulta"
       class="whatsapp-float"
       target="_blank"
+      rel="noopener noreferrer"
       aria-label="Fale conosco pelo WhatsApp"
     >
-      <i class="lab la-whatsapp"></i>
+      <i class="lab la-whatsapp" aria-hidden="true"></i>
     </a>
 
     <!-- acesibilidade de libras do governo -->

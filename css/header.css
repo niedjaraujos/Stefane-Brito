@@ -41,9 +41,11 @@
 .menu-hamburguer img {
   width: 30px;
   margin-right: 1.5rem;
+  transition: transform 0.3s ease; /* 🆕 Animação suave */
 }
 .menu-hamburguer.active img {
   content: url("../assets/close.svg");
+  transform: rotate(90deg);
 }
 .navbar__list {
   display: flex;
