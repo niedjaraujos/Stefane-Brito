@@ -89,25 +89,17 @@
         <a href="#home" class="header__logo" aria-label="Página Inicial"
           ><span class="header__logo-color">Dra.</span> Stefane Brito</a
         >
-        <div
+        <button
           class="menu-hamburguer"
           aria-label="Abrir menu de navegação"
           aria-expanded="false"
           aria-controls="navbar"
+          type="button"
         >
-          <img
-            src="./assets/hamburguer.svg"
-            alt="menu hamburguer"
-            aria-hidden="true"
-          />
-        </div>
-        <nav
-          class="navbar"
-          aria-label="Navegação Principal"
-          role="navigation"
-          id="navbar"
-        >
-          <ul class="navbar__list" role="list">
+          <img src="./assets/hamburguer.svg" alt="" aria-hidden="true" />
+        </button>
+        <nav class="navbar" aria-label="Navegação Principal" id="navbar">
+          <ul class="navbar__list">
             <li>
               <a href="#home" class="navbar__link">Início</a>
             </li>
@@ -126,7 +118,7 @@
     </header>
 
     <!-- Principal -->
-    <main role="main" id="main-content">
+    <main>
       <!-- Seção Hero-->
       <section class="hero" id="home">
         <div class="container hero__container">
@@ -153,7 +145,7 @@
           <div class="image">
             <img
               src="./assets/image-hero.png"
-              alt="Dra. Stefane Brito advogada trabalhista e previdenciária em Macapá"
+              alt="advogada trabalhista e previdenciária em Macapá"
               loading="lazy"
             />
           </div>
@@ -172,8 +164,8 @@
             </p>
           </div>
 
-          <div class="cards" role="list">
-            <article class="card" role="listitem">
+          <div class="cards">
+            <article class="card">
               <i class="las la-briefcase" aria-hidden="true"></i>
               <h3>Direito Trabalhista</h3>
               <p class="card_description">
@@ -182,7 +174,7 @@
                 acordos.
               </p>
             </article>
-            <article class="card" role="listitem">
+            <article class="card">
               <i class="las la-hand-holding-usd" aria-hidden="true"></i>
               <h3>Direito Previdenciário</h3>
               <p class="card_description">
@@ -191,7 +183,7 @@
                 auxílios ou pensões.
               </p>
             </article>
-            <article class="card" role="listitem">
+            <article class="card">
               <i class="las la-balance-scale" aria-hidden="true"></i>
               <h3>Direito Civil</h3>
               <p class="card_description">
@@ -233,7 +225,7 @@
               abordagem humanizada, oferecendo soluções jurídicas sólidas e
               sensíveis à realidade de cada cliente."
             </p>
-            <ul class="about__list" role="list">
+            <ul class="about__list">
               <li class="about__list-item">OAB/AP - 5446</li>
               <li class="about__list-item">Atua em Macapá e região - AP</li>
               <li class="about__list-item">Membro comissão OAB/AP Jovem.</li>
@@ -259,10 +251,7 @@
           </div>
           <form aria-label="Formulário de contato" novalidate>
             <div class="formGroup">
-              <label for="name"
-                >Nome Completo
-                <span aria-label="campo obrigatório">*</span></label
-              >
+              <label for="name">Nome Completo <span>*</span></label>
               <input
                 type="text"
                 id="name"
@@ -275,46 +264,37 @@
               <span id="name-error" class="error-message" role="alert"></span>
             </div>
             <div class="formGroup">
-              <label for="email"
-                >E-mail <span aria-label="campo obrigatório">*</span></label
-              >
+              <label for="email">E-mail <span>*</span></label>
               <input
                 type="email"
                 id="email"
                 name="email"
                 autocomplete="email"
                 required
-                aria-required="true"
                 aria-describedby="email-error"
               />
               <span id="email-error" class="error-message" role="alert"></span>
             </div>
 
             <div class="formGroup">
-              <label for="phone"
-                >Telefone <span aria-label="campo obrigatório">*</span></label
-              >
+              <label for="phone">Telefone <span>*</span> </label>
               <input
                 type="tel"
                 id="phone"
                 name="phone"
                 autocomplete="tel"
                 required
-                aria-required="true"
                 aria-describedby="phone-error"
                 placeholder="(00) 00000-0000"
               />
               <span id="phone-error" class="error-message" role="alert"></span>
             </div>
             <div class="formGroup">
-              <label for="message"
-                >Mensagem <span aria-label="campo obrigatório">*</span></label
-              >
+              <label for="message">Mensagem <span>*</span></label>
               <textarea
                 name="message"
                 id="message"
                 required
-                aria-required="true"
                 aria-describedby="message-error"
                 rows="5"
               ></textarea>
@@ -332,7 +312,7 @@
       </section>
     </main>
 
-    <footer class="footer" role="contentinfo">
+    <footer class="footer">
       <div class="footer__container">
         <div class="footer__top">
           <section class="footer__section">
@@ -345,21 +325,25 @@
           </section>
 
           <section class="footer__section" aria-labelledby="footer-links">
-            <h3 class="footer__section-title">Links Rápidos</h3>
-            <ul class="footer__list" role="list">
-              <li class="footer__list-item">
-                <a href="#home" class="footer__link">Início</a>
-              </li>
-              <li class="footer__list-item">
-                <a href="#about" class="footer__link">Sobre</a>
-              </li>
-              <li class="footer__list-item">
-                <a href="#services" class="footer__link">Serviços</a>
-              </li>
-              <li class="footer__list-item">
-                <a href="#contact" class="footer__link">Contato</a>
-              </li>
-            </ul>
+            <h3 class="footer__section-title" id="footer-links">
+              Links Rápidos
+            </h3>
+            <nav aria-label="Links rápidos do rodapé">
+              <ul class="footer__list">
+                <li class="footer__list-item">
+                  <a href="#home" class="footer__link">Início</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#about" class="footer__link">Sobre</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#services" class="footer__link">Serviços</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#contact" class="footer__link">Contato</a>
+                </li>
+              </ul>
+            </nav>
           </section>
           <section class="footer__section">
             <h3 class="footer__section-title">Contato</h3>

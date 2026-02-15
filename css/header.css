@@ -38,6 +38,10 @@
 .navbar.active {
   display: block;
 }
+.menu-hamburguer {
+  background: none;
+  border: none;
+}
 .menu-hamburguer img {
   width: 30px;
   margin-right: 1.5rem;
