@@ -8,7 +8,8 @@ Site institucional responsivo desenvolvido para uma profissional da área juríd
 
 ## 📸 Preview
 
-<img width="1671" height="872" alt="image" src="https://github.com/user-attachments/assets/8d9ea722-b943-4065-890e-b615ae443b9a" />
+<img width="1426" height="745" alt="image" src="https://github.com/user-attachments/assets/1fb3c614-5aa0-46fe-ae9d-46fa39be9a86" />
+
 
 ## 🚀 Tecnologias Utilizadas
 - HTML5 Semantic
@@ -22,8 +23,9 @@ Site institucional responsivo desenvolvido para uma profissional da área juríd
 - [x] Layout totalmente responsivo (Mobile-first)
 - [x] Formulário de contato funcional
 - [x] Botão flutuante para WhatsApp
-- [x] Animações suaves na rolagem 
+- [x] Animações ao scroll com Intersection Observer
 - [x] Acessibilidade com VLibras
+
 
 
 
