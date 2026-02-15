@@ -6,12 +6,32 @@
     <!-- Meta tags de SEO -->
     <meta
       name="description"
-      content="Advocacia especializada em direito civil, família e trabalhista. Atendimento humanizado e soluções jurídicas personalizadas."
+      content="Dra. Stefane Brito é advogada especialista em Direito Trabalhista e Previdenciário em Macapá - AP. Atendimento humanizado e estratégico. Agende sua consulta."
+    />
+
+    <meta name="author" content="Dra. Stefane Brito" />
+
+    <!-- Para WhatsApp e Facebook (card bonito ao compartilhar) -->
+    <meta
+      property="og:title"
+      content="Dra. Stefane Brito | Advogada em Macapá"
     />
     <meta
-      name="keywords"
-      content="advogada, advocacia, direito civil, direito de família, direito trabalhista"
+      property="og:description"
+      content="Especialista em Direito Trabalhista e Previdenciário em Macapá - AP."
     />
+    <meta
+      property="og:image"
+      content="https://stefane-brito.vercel.app/assets/card-compartilhamento.jpg"
+    />
+    <meta property="og:url" content="https://stefane-brito.vercel.app/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+
+    <link rel="canonical" href="https://stefane-brito.vercel.app/" />
+
+    <meta name="robots" content="index, follow" />
+
     <!-- Link para Icons -->
     <link
       rel="stylesheet"
@@ -29,7 +49,38 @@
     <link rel="icon" type="image/png" href="assets/logo.png" />
     <!-- Link do arquivo css -->
     <link rel="stylesheet" href="style.css" />
-    <title>Dra. Stefane Brito | Advogada</title>
+    <title>Advogada de Direito Trabalhista e Previdenciário em Macapá.</title>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Attorney",
+        "name": "Dra. Stefane Brito",
+        "image": "https://stefane-brito.vercel.app/assets/Stefane.png",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Seu endereço aqui (se tiver)",
+          "addressLocality": "Macapá",
+          "addressRegion": "AP",
+          "postalCode": "68900-000",
+          "addressCountry": "BR"
+        },
+        "telephone": "+5596981346275",
+        "email": "stefanebrt.adv@gmail.com",
+        "url": "https://stefane-brito.vercel.app/",
+        "priceRange": "$$",
+        "areaServed": {
+          "@type": "City",
+          "name": "Macapá"
+        },
+        "knowsAbout": [
+          "Direito Trabalhista",
+          "Direito Previdenciário",
+          "Direito Civil"
+        ]
+      }
+    </script>
   </head>
   <body>
     <!-- Cabeçalho -->
@@ -39,7 +90,7 @@
           ><span class="header__logo-color">Dra.</span> Stefane Brito</a
         >
         <div class="menu-hamburguer" aria-label="Abrir menu">
-          <img src="./assets/hamburguer.png" alt="menu hamburguer" />
+          <img src="./assets/hamburguer.svg" alt="menu hamburguer" />
         </div>
         <nav class="navbar" aria-label="Navegação Principal">
           <ul class="navbar__list">
@@ -58,11 +109,16 @@
       <section class="hero" id="home">
         <div class="container hero__container">
           <div class="hero__content">
-            <p class="subtitle">Advocacia & Consultoria</p>
-            <h1>Soluções Jurídicas com Excelência</h1>
+            <h1 class="subtitle">
+              Advogada Trabalhista e Previdenciária em Macapá
+            </h1>
+            <h2 class="hero__title">Soluções Jurídicas com Excelência</h2>
             <p class="description">
-              Atendimento personalizado e humanizado para proteger seus direitos
-              e interesses. Experiência, ética e comprometimento em cada caso.
+              Advogada trabalhista e previdenciária em Macapá - AP,
+              especializada em direitos trabalhistas, aposentadorias e
+              benefícios do INSS. Atendimento personalizado, estratégico e
+              humanizado para proteger seus direitos e interesses. Experiência,
+              ética e comprometimento em cada caso.
             </p>
             <div class="hero__contacts">
               <a href="#contact" class="btn btn--primary"
@@ -75,7 +131,7 @@
           <div class="image">
             <img
               src="./assets/image-hero.png"
-              alt="imagem aleatoria de uma advogada segurando uma estatua"
+              alt="Dra. Stefane Brito advogada trabalhista e previdenciária em Macapá"
               loading="lazy"
             />
           </div>
@@ -95,7 +151,7 @@
           </div>
 
           <div class="cards">
-            <artcile class="card">
+            <article class="card">
               <i class="las la-briefcase"></i>
               <h3>Direito Trabalhista</h3>
               <p class="card_description">
@@ -103,17 +159,17 @@
                 trabalhistas e ações judiciais. Experiência em negociações e
                 acordos.
               </p>
-            </artcile>
-            <artcile class="card"
-              ><i class="las la-hand-holding-usd"></i>
+            </article>
+            <article class="card">
+              <i class="las la-hand-holding-usd"></i>
               <h3>Direito Previdenciário</h3>
               <p class="card_description">
                 Atuação administrativa, planejamentos processos judiciais na
                 concessão de aposentadorias por idade, tempo, invalidez,
                 auxílios ou pensões.
-              </p></artcile
-            >
-            <artcile class="card">
+              </p>
+            </article>
+            <article class="card">
               <i class="las la-balance-scale"></i>
               <h3>Direito Civil</h3>
               <p class="card_description">
@@ -121,7 +177,7 @@
                 consumidor. Atuação na prevenção de conflitos, inclusive através
                 da mediação e conciliação.
               </p>
-            </artcile>
+            </article>
           </div>
         </div>
       </section>
@@ -132,7 +188,7 @@
           <div class="image">
             <img
               src="./assets/Stefane.png"
-              alt="A advogada Stefane em seu escritório"
+              alt="Dra. Stefane Brito advogada trabalhista e previdenciária em Macapá"
               loading="lazy"
             />
           </div>
@@ -140,22 +196,24 @@
             <p class="subtitle">Quem Sou</p>
             <h2>Dra. Stefane Brito</h2>
             <p class="about__text">
-              "Advogada com três anos de atuação e sólida formação ética no
-              Ministério Público. Dedico-me integralmente às causas Trabalhistas
-              e Previdenciárias, oferecendo uma defesa técnica e estratégica
-              focada na entrega de soluções reais e eficazes."
+              Com três anos de experiência jurídica e uma base ética construída
+              no Ministério Público do Amapá, onde atuei na Promotoria de Atos
+              Infracionais, trago um olhar técnico apurado e profundo
+              compromisso com a justiça. Minha atuação evoluiu do Direito Civil
+              para as áreas Trabalhista e Previdenciária — onde encontrei minha
+              verdadeira vocação.
             </p>
             <p class="about__text">
-              Dedico-me ao aprimoramento constante para garantir a excelência no
+              Hoje, dedico minha prática à defesa estratégica desses direitos,
+              combinando rigor técnico, atenção aos detalhes e foco total em
+              soluções eficazes para cada cliente, para garantir a excelência no
               atendimento. Meu propósito é unir rigor técnico e estratégia a uma
               abordagem humanizada, oferecendo soluções jurídicas sólidas e
               sensíveis à realidade de cada cliente."
             </p>
             <ul class="about__list">
               <li class="about__list-item">OAB/AP - 5446</li>
-              <li class="about__list-item">
-                Especialização em Direito Trabalhista e Previdenciário
-              </li>
+              <li class="about__list-item">Atua em Macapá e região - AP</li>
               <li class="about__list-item">Membro comissão OAB/AP Jovem.</li>
               <li class="about__list-item">
                 Pós-graduada em Prática Trabalhista e Previdenciária.
@@ -240,9 +298,10 @@
         <div class="footer__top">
           <section class="footer__section">
             <h4 class="footer__section-title">Dra. Stefane Brito</h4>
-            <p class="footer__text">
-              Advocacia comprometida com a justiça e os direitos dos nossos
-              clientes. Atendimento humanizado e soluções personalizadas.
+            <p class="footer__text text">
+              Advogada trabalhista e previdenciária em Macapá-AP, comprometida
+              com a justiça e os direitos dos nossos clientes. Atendimento
+              humanizado e soluções personalizadas.
             </p>
           </section>
 
@@ -290,6 +349,15 @@
         </p>
       </div>
     </footer>
+
+    <a
+      href="https://wa.me/5596981346275?text=Olá, gostaria de agendar uma consulta"
+      class="whatsapp-float"
+      target="_blank"
+      aria-label="Fale conosco pelo WhatsApp"
+    >
+      <i class="lab la-whatsapp"></i>
+    </a>
 
     <!-- acesibilidade de libras do governo -->
     <div vw class="enabled">

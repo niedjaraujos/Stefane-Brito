@@ -11,7 +11,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.75rem;
+  padding: 1rem;
 }
 .header__logo {
   font-family: var(--font-heading);
@@ -43,7 +43,7 @@
   margin-right: 1.5rem;
 }
 .menu-hamburguer.active img {
-  content: url("../assets/close.png");
+  content: url("../assets/close.svg");
 }
 .navbar__list {
   display: flex;
