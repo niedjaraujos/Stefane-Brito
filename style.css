@@ -72,6 +72,7 @@ section {
     padding: 4rem 1rem;
   }
 }
+h1,
 h2,
 h3 {
   font-family: var(--font-heading);
