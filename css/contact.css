@@ -46,13 +46,13 @@ textarea {
 }
 
 .input-error {
-  border: 2px solid #e74c3c;
+  border: 2px solid #e63946;
 }
 
 .error-message {
   display: block;
   font-size: 0.875rem;
-  color: #e74c3c;
+  color: #e63946;
   margin-top: 5px;
   min-height: 20px;
 }

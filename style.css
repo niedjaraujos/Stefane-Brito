@@ -60,12 +60,13 @@ body {
   background-color: var(--color-bg);
   color: var(--color-text);
   line-height: 1.7;
+  overflow-x: hidden;
 }
 main {
   flex: 1;
 }
 section {
-  padding: 1rem;
+  padding: 2rem;
 }
 @media (width >= 1024px) {
   section {
@@ -125,7 +126,7 @@ h2 {
 }
 
 .image {
-  max-width: 600px;
+  max-width: 700px;
   width: 100%;
 }
 img {

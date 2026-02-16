@@ -1,4 +1,4 @@
-//menu hamburguer
+//Menu hamburguer
 
 const menu = document.querySelector(".menu-hamburguer");
 const navList = document.querySelector(".navbar");
@@ -8,7 +8,7 @@ menu.addEventListener("click", () => {
   navList.classList.toggle("active");
   menu.classList.toggle("active");
 
-  //ação do leitor de tela ao clicar no menu hamburguer,
+  //Ação do leitor de tela ao clicar no menu hamburguer,
   // Verifica se está aberto ou fechado
   const isExpanded = navList.classList.contains("active");
 
@@ -49,4 +49,58 @@ document.querySelectorAll(".cards, .about__content, form").forEach((el) => {
   el.style.transform = "translateY(40px)";
   el.style.transition = "opacity 0.6s ease, transform 0.6s ease";
   observer.observe(el);
+});
+
+// Validação formulario
+
+// Máscara de telefone (Formata enquanto digita)
+const inputPhone = document.querySelector("#phone");
+inputPhone.addEventListener("input", (e) => {
+  let value = e.target.value.replace(/\D/g, ""); // Remove tudo que não é número
+  if (value.length >= 11) value = value.slice(0, 11); // Limita a 11 dígitos
+
+  value = value
+    .replace(/^(\d{2})(\d)/, "($1) $2")
+    .replace(/(\d{5})(\d)/, "$1-$2"); // formato (00) 00000-0000 usando regex
+
+  e.target.value = value;
+});
+
+//Mostrar os erros quando houver
+
+const showError = (input, message) => {
+  const errorId = document.getElementById(`${input.id}-error`);
+  errorId.textContent = message;
+  input.classList.add("input-error");
+};
+
+const clearError = (input) => {
+  const errorId = document.getElementById(`${input.id}-error`);
+  errorId.textContent = "";
+  input.classList.remove("input-error");
+};
+
+//validação ao enviar
+const form = document.querySelector("form");
+const fields = form.querySelectorAll("input, textarea");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  let isFormValid = true;
+
+  fields.forEach((field) => {
+    if (field.value.trim() === "") {
+      showError(field, "Este campo é obrigatório!");
+      isFormValid = false;
+    } else {
+      clearError(field);
+    }
+    console.log(field.value);
+  });
+
+  if (isFormValid) {
+    alert("ok");
+    form.reset();
+  }
 });
