@@ -16,6 +16,18 @@ menu.addEventListener("click", () => {
   menu.setAttribute("aria-expanded", isExpanded);
 });
 
+// Fechar o menu ao clicar em um link
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    // Remove a classe active do menu e da lista
+    navList.classList.remove("active");
+    menu.classList.remove("active");
+
+    // Atualiza o aria-expanded para false também ao clicar no link
+    menu.setAttribute("aria-expanded", "false");
+  });
+});
+
 // Intersection Observer para animações ao scroll
 const observerOptions = {
   threshold: 0.1,
