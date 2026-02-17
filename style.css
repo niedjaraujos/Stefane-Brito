@@ -16,7 +16,7 @@
   user-select: none;
 }
 :root {
-  --color-primary: #060916;
+  --color-primary: #0a0f24;
   --color-secondary: #c9aa6120;
   --color-span: #c0c0c0;
   --color-text: #2c2c2c;
@@ -59,7 +59,7 @@ body {
   font-family: var(--font-base);
   background-color: var(--color-bg);
   color: var(--color-text);
-  line-height: 1.7;
+  line-height: 1.5;
   overflow-x: hidden;
 }
 main {
@@ -76,9 +76,10 @@ section {
 h1,
 h2,
 h3 {
+  color: var(--color-primary);
   font-family: var(--font-heading);
-  font-weight: 600;
-  line-height: 1.2;
+  font-weight: 700;
+  line-height: 1.1;
 }
 h2 {
   font-size: clamp(1rem, 10vw, 3rem);

@@ -9,7 +9,7 @@
   margin-top: 3rem;
 }
 .card {
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: var(--border-radius-sm);
   border: 1px solid #c9aa6111;
   text-align: left;
@@ -29,12 +29,12 @@
 }
 h3 {
   color: var(--color-primary);
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   margin-block: 1rem;
 }
 .card_description {
   color: var(--color-text-light);
-  line-height: 1.7;
+  line-height: 1.5;
 }
 @media (width >= 1024px) {
   .services__header {
