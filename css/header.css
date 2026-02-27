@@ -91,6 +91,7 @@
     position: static;
     width: auto;
     margin-left: auto;
+   background: var(--color-primary);
   }
   .navbar__list {
     flex-direction: row;
