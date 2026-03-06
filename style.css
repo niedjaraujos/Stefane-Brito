@@ -13,7 +13,6 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  user-select: none;
 }
 :root {
   --color-primary: #0a0f24;
@@ -68,11 +67,7 @@ main {
 section {
   padding: 2rem;
 }
-@media (width >= 1024px) {
-  section {
-    padding: 4rem 1rem;
-  }
-}
+
 h1,
 h2,
 h3 {
@@ -107,7 +102,6 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding-block: 4rem;
 }
 
 .btn {
@@ -127,9 +121,10 @@ h2 {
 }
 
 .image {
-  max-width: 700px;
-  width: 100%;
+  max-width: 600px;
+  width: 90%;
 }
+
 img {
   width: 100%;
   height: auto;
@@ -157,4 +152,12 @@ img {
 
 .whatsapp-float:hover {
   transform: scale(1.1);
+}
+@media (width >= 1024px) {
+  section {
+    padding: 4rem 1rem;
+  }
+  .image {
+    width: 100%;
+  }
 }

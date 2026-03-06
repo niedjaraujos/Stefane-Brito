@@ -43,13 +43,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
+      rel="preload"
+      as="style"
     />
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/logo.png" />
     <!-- Link do arquivo css -->
     <link rel="stylesheet" href="style.css" />
-    <title>Advogada de Direito Trabalhista e Previdenciário em Macapá.</title>
+    <title>
+      Dra. Stefane Brito | Advogada Trabalhista e Previdenciária em Macapá
+    </title>
 
     <!-- Schema Markup -->
     <script type="application/ld+json">
@@ -60,7 +63,7 @@
         "image": "https://stefane-brito.vercel.app/assets/Stefane.png",
         "address": {
           "@type": "PostalAddress",
-          <!-- "streetAddress": "Seu endereço aqui (se tiver)", -->
+          "streetAddress": "Seu endereço aqui (se tiver)",
           "addressLocality": "Macapá",
           "addressRegion": "AP",
           "postalCode": "68900-000",
@@ -145,6 +148,8 @@
           <div class="image">
             <img
               src="./assets/image-hero.png"
+              width="500"
+              height="600"
               alt="Dra. Stefane Brito, advogada trabalhista e previdenciária em Macapá"
               loading="eager"
             />
@@ -153,11 +158,11 @@
       </section>
 
       <!-- Seção Serviços-->
-      <section id="services">
+      <section id="services" aria-labelledby="services__title">
         <div class="container services__container">
           <div class="services__header">
             <p class="subtitle">Áreas de Atuação</p>
-            <h2>Serviços Especializados</h2>
+            <h2 id="services__title">Serviços Especializados</h2>
             <p class="description">
               Oferecemos assessoria jurídica completa com foco em resultados e
               satisfação do cliente
@@ -178,7 +183,7 @@
               <i class="las la-hand-holding-usd" aria-hidden="true"></i>
               <h3>Direito Previdenciário</h3>
               <p class="card_description">
-                Atuação administrativa, planejamentos processos judiciais na
+                Atuação administrativa, planejamento e processos judiciais na
                 concessão de aposentadorias por idade, tempo, invalidez,
                 auxílios ou pensões.
               </p>
@@ -197,18 +202,20 @@
       </section>
 
       <!-- Seção Sobre-->
-      <section id="about" class="about">
+      <section id="about" class="about" aria-labelledby="about__title">
         <div class="container">
           <div class="image">
             <img
               src="./assets/Stefane.png"
+              width="500"
+              height="600"
               alt="Dra. Stefane Brito advogada trabalhista e previdenciária em Macapá"
               loading="lazy"
             />
           </div>
           <div class="about__content">
             <p class="subtitle">Quem Sou</p>
-            <h2>Dra. Stefane Brito</h2>
+            <h2 id="about__title">Dra. Stefane Brito</h2>
             <p class="about__text">
               Com três anos de experiência jurídica e uma base ética construída
               no Ministério Público do Amapá, onde atuei na Promotoria de Atos
@@ -239,11 +246,11 @@
       </section>
 
       <!-- Seção Contato -->
-      <section id="contact" class="contact">
+      <section id="contact" class="contact" aria-labelledby="contact__title">
         <div class="container">
           <div class="contact__header">
             <p class="subtitle">Fale Conosco</p>
-            <h2>Agende sua Consulta</h2>
+            <h2 id="contact__title">Agende sua Consulta</h2>
             <p class="description">
               Preencha o formulário abaixo e entraremos em contato o mais breve
               possível
