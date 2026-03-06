@@ -2,7 +2,6 @@
   background: linear-gradient(to right, var(--color-bg) 0%, #c9aa6131 100%);
 }
 .hero__container {
-  flex-direction: column;
   gap: 3rem;
   animation: fadeInUp 1s ease-out;
 }
@@ -49,8 +48,8 @@
   }
 }
 @media (width >= 1024px) {
-  .hero__container {
-    flex-direction: row !important;
+  .hero .container {
+    flex-direction: row;
     width: 100%;
   }
   .description {
