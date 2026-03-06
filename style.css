@@ -92,7 +92,6 @@ h2 {
 .description {
   font-size: 1.25rem;
   color: var(--color-text-light);
-  margin-bottom: 2.5rem;
 }
 .container {
   width: 100%;
@@ -121,7 +120,7 @@ h2 {
 }
 
 .image {
-  max-width: 600px;
+  max-width: 500px;
   width: 90%;
 }
 
