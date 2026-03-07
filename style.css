@@ -192,15 +192,20 @@ img {
   background: none;
   border: none;
 }
-.menu-hamburguer img {
-  width: 30px;
-  margin-right: 1.5rem;
-  transition: transform 0.3s ease; /* 🆕 Animação suave */
-  user-select: none;
+.menu-hamburguer .icon-close {
+  display: none;
 }
-.menu-hamburguer.active img {
-  content: url("../assets/close.svg");
+.menu-hamburguer.active .icon-open {
+  display: none;
   transform: rotate(90deg);
+}
+.menu-hamburguer.active .icon-close {
+  display: block;
+}
+
+.menu-hamburguer svg {
+  transition: transform 0.3s ease;
+  stroke: #d4af37;
 }
 .navbar__list {
   display: flex;
