@@ -461,7 +461,7 @@ textarea {
 
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 12px;
 }
 .footer__link:hover,
 .footer__link:focus {
