@@ -175,8 +175,8 @@ img {
   position: fixed;
   width: 60px;
   height: 60px;
-  bottom: 40px;
-  right: 40px;
+  bottom: 20px;
+  right: 20px;
   background-color: #033b17;
   color: var(--color-white);
   border-radius: 50px;
@@ -449,7 +449,7 @@ img {
 }
 .cta__description {
   font-size: clamp(1.25rem, 5vw, 1.5rem);
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 .btn__cta {
   border: 1px solid var(--color-white);
@@ -487,15 +487,18 @@ img {
 /* ABOUT */
 .about {
   padding: 0 !important;
+  background-color: var(--color-primary);
 }
 .about__container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
 }
 .about .image {
   max-width: 90%;
-  width: 80%;
+  width: 100%;
+  padding-top: 3rem;
 }
 .about .image::before,
 .about .image::after {
@@ -706,6 +709,9 @@ textarea {
   .about__container {
     flex-direction: row;
     justify-content: center;
+  }
+  .about .image {
+    padding-top: 0;
   }
   form {
     padding: 4rem;
