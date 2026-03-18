@@ -81,9 +81,7 @@ a:focus-visible {
   outline: 3px solid #033b17;
   outline-offset: 2px;
 }
-main {
-  flex: 1;
-}
+
 section {
   padding: 2rem;
 }
@@ -700,7 +698,7 @@ textarea {
 
 @media (width>= 1024px) {
   section {
-    padding: 5rem 2rem;
+    padding: 6rem 2rem;
   }
   .image {
     width: 100%;
