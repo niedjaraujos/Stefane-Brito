@@ -11,11 +11,16 @@
 :root {
   --color-primary: #040508;
   --color-secondary: #d8d4bd;
-  --color-span: #aa9744;
-  --color-text: #2c2a27;
-  --color-text-light: #7a7269;
-  --color-text-subtitle: #c4a553;
-  --color-text-description: #3a3a35;
+  --color-span: #8f7a2a;
+
+  /* TEXTOS */
+  --color-text: #1a1a1a;
+  --color-text-light: #4a4038;
+  --color-text-subtitle: #5c4a12;
+  --color-text-subtitle-light: #e6c65c;
+  --color-text-description: #3a3835;
+
+  /* BACKGROUND */
   --color-bg: #fcf8f2;
   --color-white: #ffffff;
 
@@ -24,6 +29,8 @@
 
   --width-container: 1400px;
 }
+/* aplicadas nos subtitle de acordo com o fundo */
+
 html {
   scroll-padding-top: 5rem;
   scroll-behavior: smooth;
@@ -51,9 +58,28 @@ body {
   min-height: 100vh;
   font-family: var(--font-base);
   background-color: var(--color-bg);
-  color: var(--color-text);
   line-height: 1.6;
   overflow-x: hidden;
+}
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  padding: 0.75rem 1.25rem;
+  background: #000;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 9999;
+  border-radius: 0 0 4px 0;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+a:focus-visible {
+  outline: 3px solid #033b17;
+  outline-offset: 2px;
 }
 main {
   flex: 1;
@@ -78,12 +104,10 @@ h2 {
 }
 .subtitle {
   font-size: 0.875rem;
-  color: var(--color-text-subtitle);
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 2px;
   margin-bottom: 1rem;
-
   display: flex;
   align-items: center;
   gap: 0.75rem;
@@ -93,8 +117,17 @@ h2 {
   display: inline-block;
   width: 1.5rem;
   height: 1px;
-  background: var(--color-text-subtitle);
+  background: var(--color-span);
   flex-shrink: 0;
+}
+.sub-dark {
+  color: var(--color-text-subtitle);
+}
+.sub-light {
+  color: var(--color-text-subtitle-light);
+}
+.sub-light::before {
+  background: var(--color-text-subtitle-light);
 }
 .description {
   font-size: 1.25rem;
@@ -536,8 +569,7 @@ h2 {
   padding-bottom: 0.5rem;
   padding-left: 1.5rem;
   position: relative;
-
-  color: var(--color-text-light);
+  color: var(--color-secondary);
 }
 .about__list-item::before {
   content: "✓";
