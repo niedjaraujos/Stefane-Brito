@@ -19,7 +19,9 @@ O projeto foi desenvolvido utilizando HTML, CSS e JavaScript, priorizando boas p
 
 ## 📸 Preview
 
-![Preview do projeto](https://github.com/user-attachments/assets/0c103cf7-74c5-40a5-897f-5929e0b0c4cd)
+![Preview do projeto](https://github.com/user-attachments/assets/2eb37bf6-a8ee-4c33-a072-56bb532d651f)
+
+
 
 ## 🚀 Funcionalidades
 
@@ -56,7 +58,7 @@ Durante o desenvolvimento deste projeto foram praticados:
 Resultados obtidos no Google Lighthouse:
 
 - Performance: 97
-- Accessibility: 96
+- Accessibility: 100
 - Best Practices: 100
 - SEO: 100
 
